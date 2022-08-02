@@ -1,0 +1,93 @@
+nav {
+    background-color: $color-1;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        a {
+            img {
+                width: 180px;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+        label {
+            img {
+                display: none;
+            }
+        }
+        input {
+            display: none;
+        }
+        ul {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 2rem;
+            margin-right: 1rem;
+            li {
+                list-style: none;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+                    &::after {
+                        content: "";
+                        display: block;
+                        background-color: white;
+                        width: 90%;
+                        height: 3px;
+                        margin-top: 1px;
+                        clip-path: var(--clippy);
+                        transition: 0.5s;
+                    }
+                    &:hover {
+                        --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+                        color: white;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:763px) {
+    nav {
+        div {
+            label {
+                img {
+                    display: block;
+                    cursor: pointer;
+                    margin-right: 1rem;
+                }
+            }
+            ul {
+                position: fixed;
+                top: 80px;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                background-color: #7fb1b4;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: 1s ease-in-out;
+                li {
+                    a {
+                        color: black;
+                        font-weight: 600;
+                    }
+                }  
+            }
+            input:checked + ul {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    }
+}
+

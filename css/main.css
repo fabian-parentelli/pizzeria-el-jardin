@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@300;400;900&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.fondo-body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #dcecb4; }
+
+nav {
+  background-color: #00815d;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav div a img {
+    width: 180px;
+    transition: 0.3s; }
+    nav div a img:hover {
+      transform: scale(1.15); }
+  nav div label img {
+    display: none; }
+  nav div input {
+    display: none; }
+  nav div ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    margin-right: 1rem; }
+    nav div ul li {
+      list-style: none; }
+      nav div ul li a {
+        color: white;
+        text-decoration: none;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); }
+        nav div ul li a::after {
+          content: "";
+          display: block;
+          background-color: white;
+          width: 90%;
+          height: 3px;
+          margin-top: 1px;
+          clip-path: var(--clippy);
+          transition: 0.5s; }
+        nav div ul li a:hover {
+          --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+          color: white; }
+
+@media screen and (max-width: 763px) {
+  nav div label img {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem; }
+  nav div ul {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #7fb1b4;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 1s ease-in-out; }
+    nav div ul li a {
+      color: black;
+      font-weight: 600; }
+  nav div input:checked + ul {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-01.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black; }
+    .banner h1 span {
+      color: #00815d;
+      font-style: italic; }
+  .banner p {
+    color: white;
+    font-size: 2rem; }
+
+.banner-nos {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/baner-nos.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-nos h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    flex-direction: column; }
+    .banner-nos h1 span {
+      margin-top: 2rem;
+      color: #00815d;
+      font-style: italic; }
+  .banner-nos p {
+    color: white;
+    font-size: 2rem; }
+
+.banner-lacarta {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-lacarta.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-lacarta h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    flex-direction: column; }
+    .banner-lacarta h1 span {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #00815d;
+      font-style: italic; }
+  .banner-lacarta p {
+    color: white;
+    font-size: 2rem; }
+
+.banner-galeria {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-galeria.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-galeria h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    flex-direction: column; }
+    .banner-galeria h1 span {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #00815d;
+      font-style: italic; }
+  .banner-galeria p {
+    color: white;
+    font-size: 2rem; }
+
+.banner-contacto {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-contacto h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    flex-direction: column; }
+    .banner-contacto h1 span {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #00815d;
+      font-style: italic; }
+  .banner-contacto p {
+    color: white;
+    font-size: 2rem; }
+
+@media screen and (max-width: 763px) {
+  .banner h1 {
+    display: flex;
+    flex-direction: column; }
+  .banner-nos h1 {
+    display: flex;
+    flex-direction: column; }
+  .banner-lacarta h1 {
+    display: flex;
+    flex-direction: column; }
+  .banner-galeria h1 {
+    display: flex;
+    flex-direction: column; }
+  .banner-contacto {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 360px) {
+  .banner h1 {
+    font-size: 4rem; }
+  .banner p {
+    font-size: 1.5rem; }
+  .banner-nos h1 {
+    font-size: 4rem; }
+  .banner-nos p {
+    font-size: 1.5rem; }
+  .banner-lacarta h1 {
+    font-size: 4rem; }
+  .banner-lacarta p {
+    font-size: 1.5rem; }
+  .banner-galeria h1 {
+    font-size: 4rem; }
+  .banner-galeria p {
+    font-size: 1.5rem; }
+  .banner-contacto h1 {
+    font-size: 4rem; }
+  .banner-contacto p {
+    font-size: 1.5rem; } }
+
+.banner-02 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../photo/back-02.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border: solid black; }
+
+.promo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #00815d;
+  padding: 2rem; }
+  .promo img {
+    width: 300px;
+    transition: 1.5s !important;
+    margin-top: 1rem; }
+
+.texto-index {
+  width: 100%;
+  text-align: center;
+  background-color: #dcecb4;
+  display: flex; }
+  .texto-index p {
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.5rem; }
+
+.carru {
+  padding: 1rem;
+  background-color: black; }
+  .carru div {
+    object-fit: unset; }
+
+.noso {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem; }
+  .noso img {
+    width: 20%;
+    margin: 1rem 0;
+    animation-name: oppa;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease; }
+
+@keyframes oppa {
+  0% {
+    transform: translateX(-15px); }
+  25% {
+    transform: translateX(15px); }
+  50% {
+    transform: translateX(-15px); }
+  75% {
+    transform: translateX(15px); }
+  100% {
+    transform: translateX(-15px); } }
+
+.gaby-0 {
+  padding: 15px; }
+  .gaby-0 div div {
+    margin-top: 2rem; }
+    .gaby-0 div div p {
+      font-size: 1.1rem; }
+    .gaby-0 div div img {
+      border-radius: 1rem; }
+
+.noso-under {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem; }
+  .noso-under div {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-top: 2rem; }
+    .noso-under div img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem; }
+    .noso-under div p {
+      position: absolute;
+      bottom: -5.5%;
+      left: 0%;
+      background-color: #00815d;
+      color: #e4e2e2;
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      border-radius: 0 0 0 1rem; }
+
+.la-carta {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-areas: "img-1 pizzetas img-5" "img-2 lista-a img-6" "img-3 lista-b img-7" "img-4 lista-c img-8";
+  gap: 1rem;
+  justify-items: center; }
+  .la-carta div {
+    width: 300px;
+    height: 300px; }
+    .la-carta div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .la-carta .img-1 {
+    grid-area: img-1; }
+  .la-carta .img-2 {
+    grid-area: img-2; }
+  .la-carta .img-3 {
+    grid-area: img-3; }
+  .la-carta .img-4 {
+    grid-area: img-4; }
+  .la-carta .img-5 {
+    grid-area: img-5; }
+  .la-carta .img-6 {
+    grid-area: img-6; }
+  .la-carta .img-7 {
+    grid-area: img-7; }
+  .la-carta .img-8 {
+    grid-area: img-8; }
+  .la-carta .pizzetas {
+    width: 100%;
+    grid-area: pizzetas;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .la-carta .pizzetas h4 {
+      font-size: 2rem; }
+  .la-carta .lista-a {
+    grid-area: lista-a; }
+    .la-carta .lista-a ul {
+      list-style: none;
+      text-align: center; }
+      .la-carta .lista-a ul li {
+        font-size: 1.3rem; }
+  .la-carta .lista-b {
+    grid-area: lista-b; }
+    .la-carta .lista-b ul {
+      list-style: none;
+      text-align: center; }
+      .la-carta .lista-b ul li {
+        font-size: 1.3rem; }
+  .la-carta .lista-c {
+    grid-area: lista-c;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.gale-a {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 2rem 0; }
+  .gale-a div {
+    width: 420px;
+    padding: 2rem;
+    transition: 0.3s; }
+    .gale-a div img {
+      width: 100%;
+      border-radius: 1rem; }
+    .gale-a div:hover {
+      transform: scale(1.3); }
+
+.tarjeta-galeria {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem 0; }
+  .tarjeta-galeria div {
+    width: 300px;
+    height: 550px;
+    border: solid 1px black;
+    background-color: #e4e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem; }
+    .tarjeta-galeria div img {
+      width: 200px;
+      padding: 1rem; }
+    .tarjeta-galeria div h6 {
+      font-size: 1.2rem;
+      font-weight: 600; }
+    .tarjeta-galeria div p {
+      text-align: center;
+      padding: 1rem; }
+
+.formu-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4rem 0; }
+
+.formulario {
+  width: 319px;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .formulario div {
+    width: 100%; }
+    .formulario div textarea {
+      resize: none; }
+  .formulario .botonito {
+    background-color: #00815d;
+    border: solid black 1px; }
+
+.contacto-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .contacto-r .horario {
+    width: 100%; }
+    .contacto-r .horario div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 1rem; }
+      .contacto-r .horario div h3 {
+        margin-left: 1rem; }
+  .contacto-r .delivery {
+    width: 100%; }
+    .contacto-r .delivery div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 1rem; }
+      .contacto-r .delivery div h3 {
+        margin-left: 1rem; }
+  .contacto-r .what-s {
+    width: 100%;
+    text-align: center; }
+    .contacto-r .what-s div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 1rem; }
+      .contacto-r .what-s div h3 {
+        margin-left: 1rem; }
+
+@media screen and (max-width: 1325px) {
+  .img-5 {
+    display: none; }
+  .img-6 {
+    display: none; }
+  .img-7 {
+    display: none; }
+  .img-8 {
+    display: none; } }
+
+@media screen and (max-width: 763px) {
+  .banner-02 {
+    height: 20vh; }
+  .texto-index {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .noso img {
+    width: 260px; }
+  .la-carta {
+    grid-template-areas: "img-1" "pizzetas" "img-2" "lista-a" "img-3" "lista-b" "img-4" "lista-c"; }
+  .gale-a div {
+    width: 100%; } }
+
+footer {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #00815d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  footer .redes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e4e2e2; }
+    footer .redes div {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2rem; }
+      footer .redes div a img {
+        margin-top: 5px;
+        transition: 0.3s; }
+        footer .redes div a img:hover {
+          transform: scale(1.15); }
+  footer .ubica {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e4e2e2;
+    text-align: center; }
+    footer .ubica a img {
+      margin-top: 5px;
+      transition: 0.3s; }
+      footer .ubica a img:hover {
+        transform: scale(1.15); }
+  footer .contacto {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e4e2e2; }
+    footer .contacto div {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 5px; }
+      footer .contacto div h3 {
+        font-size: 1.5rem; }
+
+@media screen and (max-width: 763px) {
+  footer .redes h3 {
+    font-size: 1.2rem; }
+  footer .ubica h3 {
+    font-size: 1.2rem; }
+  footer .contacto div h3 {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 360px) {
+  footer .contacto div h3 {
+    font-size: 1rem; } }

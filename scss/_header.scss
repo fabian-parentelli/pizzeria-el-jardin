@@ -1,0 +1,267 @@
+// Index - Banner
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-01.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        color: $color-4;
+        font-size: 6rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+
+        span {
+            color: $color-1;
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+// Nosotros - Banner
+.banner-nos {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/baner-nos.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        color: $color-4;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-top: 2rem;
+            color: $color-1;
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.banner-lacarta {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-lacarta.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        color: $color-4;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            color: $color-1;
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+// banner - Galeria
+.banner-galeria {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        color: $color-4;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            color: $color-1;
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.banner-contacto {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        color: $color-4;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 2px black;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            color: $color-1;
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:763px) {
+
+    // index - Banner
+    .banner {
+        h1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    // Nosotros - Banner
+    .banner-nos {
+        h1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    // La carta - Nosotros
+    .banner-lacarta {
+        h1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    // La Galería - Banner
+    .banner-galeria {
+        h1 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .banner-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    // Index - Banner
+    .banner {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Nosotros - Banner
+    .banner-nos {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    // La Carta - Banner
+    .banner-lacarta {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Galeria - Banner
+    .banner-galeria {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .banner-contacto {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>El Jardín</title>
+</head>
+
+<body>
+    <div class="fondo-body">
+
+        <!-- Navegador -->
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="assets/logo-el-jardin.png" alt="logo-el-jardin">
+                </a>
+            </div>
+
+            <div>
+                <label for="menu">
+                    <img src="assets/menu.png" alt="menu">
+                </label>
+                <input type="checkbox" id="menu">
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="pages/la-carta.html">La Carta</a>
+                    </li>
+                    <li>
+                        <a href="pages/galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="pages/contacto.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <section class="banner">
+                <h1>Pizzería <span>El Jardín</span></h1>
+                <p>Las Mejores Historias</p>
+            </section>
+        </header>
+
+
+        <main>
+            <!-- Banner background -->
+            <section>
+                <div class="banner-02"></div>
+            </section>
+
+            <section class="promo">
+                <img data-aos="flip-left" src="photo/promo-01.jpg" alt="promo-01">
+                <img data-aos="flip-up" src="photo/promo-02.jpg" alt="promo-02">
+                <img data-aos="flip-right" src="photo/promo-03.jpg" alt="promo-03">
+            </section>
+
+            <!-- Texto - index -->
+            <section class="texto-index">
+                <p>
+                    Pizzería el jardín es un lugar, con mucha paz, relajado, en donde podes disfrutar de nuestros
+                    jardines, de nuestro gran fogón bajo las estrellas. Es un lugar simple pero tan lleno de historias,
+                    que no podrás olvidar esta experiencia.
+                </p>
+                <p>
+                    Además los fines de semana tenemos músicos con divertidísimos shows, karaokes acompañados de bailes.
+                    También podes jugar alguno de nuestros varios juegos de mesa, de esos que no juegas hace bastante.
+                </p>
+                <p>
+                    Para el invierno, tenemos lugar adentro con la estufa a leña, que te hará sentir calentito/a. Te
+                    invitamos a que vengas con amigos, con la familia, los hijos e incluso con la suegra "jajajaja", los
+                    buenos momentos están garantizados.
+                </p>
+            </section>
+
+
+            <!-- Carrusel - Bootstrap -->
+            <section>
+                <div id="carouselExampleControls" class="carousel slide carru" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="photo/carrusel-01.jpg" class="d-block w-100" alt="carrusel-01">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="photo/carrusel-02.jpg" class="d-block w-100" alt="carrusel-02">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="photo/carrusel-03.jpg" class="d-block w-100" alt="carrusel-03">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- footer - redes sociales -->
+            <div class="redes">
+                <P>Redes Sociales</P>
+                <h3>Encontranos en..</h3>
+                <div class="logo-red">
+                    <a href="https://www.facebook.com/pizzeriaeljardinrosario" target="_blank">
+                        <img src="assets/facebook.png" width="50px" height="50px" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.instagram.com/pizzeria_el_jardin_rosario/" target="_blank">
+                        <img src="assets/instagram.png" width="50px" height="50px" alt="Instagrame">
+                    </a>
+                </div>
+            </div>
+
+            <!-- footer - ubicación -->
+            <div class="ubica">
+                <p>Ubicación</p>
+                <h3>Camino viejo a Barker Rosario Uruguay</h3>
+                <a href="https://goo.gl/maps/Awy2cRqAn8kB6xco7" target="_blank">
+                    <img src="assets/location.png" width="50px" height="50px" alt="mapa">
+                </a>
+            </div>
+
+            <!-- footer - Contactos -->
+            <div class="contacto">
+                <p>Información de cobtacto</p>
+                <div class="tel">
+                    <img src="assets/telefono.png" width="30px" height="30px" alt="Telefonito">
+                    <h3>+598 98 170 981</h3>
+                </div>
+
+                <div class="mail">
+                    <img src="assets/email.png" width="30px" height="30px" alt="Correo">
+                    <h3>gabrielacolombo1967@gmail.com</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

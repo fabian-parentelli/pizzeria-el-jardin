@@ -1,0 +1,460 @@
+// Index - backgound 
+.banner-02 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../photo/back-02.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border: solid black;
+}
+
+// Index - tarjetas de promos
+.promo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: $color-1;
+    padding: 2rem;
+
+    img {
+        width: 300px;
+        transition: 1.5s !important;
+        margin-top: 1rem;
+    }
+}
+
+// index - texto
+.texto-index {
+    width: 100%;
+    text-align: center;
+    background-color: $color-2;
+    display: flex;
+
+    p {
+        margin-top: 1rem;
+        padding: 2rem;
+        width: 80%;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
+
+// Index - Carrusel
+.carru {
+    padding: 1rem;
+    background-color: black;
+
+    div {
+        object-fit: unset;
+    }
+}
+
+
+// Nosotros - Tarjetas
+.noso {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    img {
+        width: 20%;
+        margin: 1rem 0;
+
+        animation-name: oppa;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+}
+
+@keyframes oppa {
+    0% {
+        transform: translateX(-15px);
+    }
+
+    25% {
+        transform: translateX(15px);
+    }
+
+    50% {
+        transform: translateX(-15px);
+    }
+
+    75% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+// nosotros - Texto con imagen
+.gaby-0 {
+    padding: 15px;
+
+    div {
+        div {
+            margin-top: 2rem;
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            img {
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+// nosotros - fotos under
+.noso-under {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    div {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+        p {
+            position: absolute;
+            bottom: -5.5%;
+            left: 0%;
+            background-color: $color-1;
+            color: $color-4;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            border-radius: 0 0 0 1rem;
+        }
+    }
+}
+
+// La Carta - Grilla
+.la-carta {
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-areas:
+        "img-1 pizzetas img-5"
+        "img-2 lista-a img-6"
+        "img-3 lista-b img-7"
+        "img-4 lista-c img-8";
+
+    gap: 1rem;
+    justify-items: center;
+
+    div {
+        width: 300px;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .img-1 {
+        grid-area: img-1;
+    }
+
+    .img-2 {
+        grid-area: img-2;
+    }
+
+    .img-3 {
+        grid-area: img-3;
+    }
+
+    .img-4 {
+        grid-area: img-4;
+    }
+
+    .img-5 {
+        grid-area: img-5;
+    }
+
+    .img-6 {
+        grid-area: img-6;
+    }
+
+    .img-7 {
+        grid-area: img-7;
+    }
+
+    .img-8 {
+        grid-area: img-8;
+    }
+
+    .pizzetas {
+        width: 100%;
+        grid-area: pizzetas;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+
+    .lista-a {
+        grid-area: lista-a;
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .lista-b {
+        grid-area: lista-b;
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .lista-c {
+        grid-area: lista-c;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// Galeria - fotos up - under
+.gale-a {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem 0;
+
+    div {
+        width: 420px;
+        padding: 2rem;
+        transition: 0.3s;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.30);
+        }
+    }
+}
+
+// Galería - Tarjetas
+.tarjeta-galeria {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+    div {
+        width: 300px;
+        height: 550px;
+        border: solid 1px black;
+        background-color: $color-4;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 1rem;
+
+        img {
+            width: 200px;
+            padding: 1rem;
+        }
+
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        p {
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+
+}
+
+// Contactos
+.formu-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+// Contactos - Formulario
+.formulario {
+    width: 319px;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    .botonito {
+        background-color: $color-1;
+        border: solid black 1px;
+    }
+}
+
+// Formulario - right
+.contacto-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .horario {
+        width: 100%;
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            h3 {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .delivery {
+        width: 100%;
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            h3 {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .what-s {
+        width: 100%;
+        text-align: center;
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            h3 {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:1325px) {
+
+    // la carta - grilla
+    .img-5 {
+        display: none;
+    }
+
+    .img-6 {
+        display: none;
+    }
+
+    .img-7 {
+        display: none;
+    }
+
+    .img-8 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:763px) {
+
+    // Index - Banner de fondo
+    .banner-02 {
+        height: 20vh;
+    }
+
+    // Index - Texto
+    .texto-index {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // Nosotros - Cartas
+    .noso {
+        img {
+            width: 260px;
+        }
+    }
+
+    // la carta - grilla
+    .la-carta {
+        grid-template-areas:
+            "img-1"
+            "pizzetas"
+            "img-2"
+            "lista-a"
+            "img-3"
+            "lista-b"
+            "img-4"
+            "lista-c";
+    }
+
+    // Galeria - Fotos Up
+    .gale-a {
+        div {
+            width: 100%;
+        }
+    }
+}
