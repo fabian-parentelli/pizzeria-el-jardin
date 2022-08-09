@@ -1,4 +1,4 @@
-// Index - backgound 
+/* main - index - background */
 .banner-02 {
     width: 100%;
     height: 40vh;
@@ -9,7 +9,7 @@
     border: solid black;
 }
 
-// Index - tarjetas de promos
+/* main - index - tarjetas */
 .promo {
     width: 100%;
     height: 100%;
@@ -26,7 +26,7 @@
     }
 }
 
-// index - texto
+/* main - index - texto */
 .texto-index {
     width: 100%;
     text-align: center;
@@ -42,7 +42,7 @@
     }
 }
 
-// Index - Carrusel
+/* main - index - Carrusel */
 .carru {
     padding: 1rem;
     background-color: black;
@@ -53,7 +53,7 @@
 }
 
 
-// Nosotros - Tarjetas
+/* main - Nosotros - Tarjetas */
 .noso {
     height: 100%;
     display: flex;
@@ -94,7 +94,7 @@
     }
 }
 
-// nosotros - Texto con imagen
+/* main - Nosotros - Texto con imágen */
 .gaby-0 {
     padding: 15px;
 
@@ -113,7 +113,7 @@
     }
 }
 
-// nosotros - fotos under
+/* main - Nosotros - Fotos */
 .noso-under {
     width: 100%;
     display: flex;
@@ -147,7 +147,7 @@
     }
 }
 
-// La Carta - Grilla
+/* main - La Carta - Grilla */
 .la-carta {
     width: 100%;
     height: 100%;
@@ -219,6 +219,7 @@
         }
     }
 
+    /* main - La Carta - Lista -a */    
     .lista-a {
         grid-area: lista-a;
 
@@ -256,7 +257,6 @@
     }
 }
 
-// Galeria - fotos up - under
 .gale-a {
     width: 100%;
     height: 100%;
@@ -274,12 +274,11 @@
         }
 
         &:hover {
-            transform: scale(1.30);
+            transform: scale(1.20);
         }
     }
 }
 
-// Galería - Tarjetas
 .tarjeta-galeria {
     width: 100%;
     height: 100%;
@@ -317,7 +316,7 @@
 
 }
 
-// Contactos
+/* main - Contacto */
 .formu-contacto {
     width: 100%;
     display: flex;
@@ -326,7 +325,7 @@
     margin: 4rem 0;
 }
 
-// Contactos - Formulario
+/* main - Contacto - formulario */
 .formulario {
     width: 319px;
     height: 100%;
@@ -348,7 +347,7 @@
     }
 }
 
-// Formulario - right
+/* main - Contacto - right */
 .contacto-r {
     display: flex;
     flex-direction: column;
@@ -396,10 +395,9 @@
 
 
 
-
+/* main - media query - 1325px */
 @media screen and (max-width:1325px) {
 
-    // la carta - grilla
     .img-5 {
         display: none;
     }
@@ -417,28 +415,25 @@
     }
 }
 
+/* main - media query - 763px */
 @media screen and (max-width:763px) {
 
-    // Index - Banner de fondo
     .banner-02 {
         height: 20vh;
     }
 
-    // Index - Texto
     .texto-index {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    // Nosotros - Cartas
     .noso {
         img {
             width: 260px;
         }
     }
 
-    // la carta - grilla
     .la-carta {
         grid-template-areas:
             "img-1"
@@ -451,7 +446,6 @@
             "lista-c";
     }
 
-    // Galeria - Fotos Up
     .gale-a {
         div {
             width: 100%;

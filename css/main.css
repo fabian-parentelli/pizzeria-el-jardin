@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@300;400;900&family=Shadows+Into+Light&display=swap");
 * {
   margin: 0;
@@ -10,6 +11,7 @@
   height: 100%;
   background-color: #dcecb4; }
 
+/* Navegador */
 nav {
   background-color: #00815d;
   width: 100%;
@@ -50,12 +52,14 @@ nav {
           --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
           color: white; }
 
+/* Navegador - media query - 763px*/
 @media screen and (max-width: 763px) {
   nav div label img {
     display: block;
     cursor: pointer;
     margin-right: 1rem; }
   nav div ul {
+    z-index: 9999;
     position: fixed;
     top: 80px;
     bottom: 0;
@@ -74,6 +78,7 @@ nav {
   nav div input:checked + ul {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
 
+/* header - Index - Banner */
 .banner {
   width: 100%;
   height: 100vh;
@@ -98,6 +103,7 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - Nosotros - Banner */
 .banner-nos {
   width: 100%;
   height: 100vh;
@@ -125,6 +131,7 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - La Carta - Banner */
 .banner-lacarta {
   width: 100%;
   height: 100vh;
@@ -153,6 +160,7 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - Galería - Banner */
 .banner-galeria {
   width: 100%;
   height: 100vh;
@@ -181,6 +189,7 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - Contacto - Banner */
 .banner-contacto {
   width: 100%;
   height: 100vh;
@@ -209,45 +218,58 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - media query - 763px */
 @media screen and (max-width: 763px) {
+  /* Header - Index */
   .banner h1 {
     display: flex;
     flex-direction: column; }
+  /* Header - Nosotros */
   .banner-nos h1 {
     display: flex;
     flex-direction: column; }
+  /* Header - La Carta */
   .banner-lacarta h1 {
     display: flex;
     flex-direction: column; }
+  /* Header - Galeria */
   .banner-galeria h1 {
     display: flex;
     flex-direction: column; }
+  /* Header - Contacto */
   .banner-contacto {
     display: flex;
     flex-direction: column; } }
 
+/* Header - media query - 360px */
 @media screen and (max-width: 360px) {
+  /* header - index */
   .banner h1 {
     font-size: 4rem; }
   .banner p {
     font-size: 1.5rem; }
+  /* header - nosotros */
   .banner-nos h1 {
     font-size: 4rem; }
   .banner-nos p {
     font-size: 1.5rem; }
+  /* header - La Carta */
   .banner-lacarta h1 {
     font-size: 4rem; }
   .banner-lacarta p {
     font-size: 1.5rem; }
+  /* header - galería */
   .banner-galeria h1 {
     font-size: 4rem; }
   .banner-galeria p {
     font-size: 1.5rem; }
+  /* header - Contacto */
   .banner-contacto h1 {
     font-size: 4rem; }
   .banner-contacto p {
     font-size: 1.5rem; } }
 
+/* main - index - background */
 .banner-02 {
   width: 100%;
   height: 40vh;
@@ -257,6 +279,7 @@ nav {
   background-attachment: fixed;
   border: solid black; }
 
+/* main - index - tarjetas */
 .promo {
   width: 100%;
   height: 100%;
@@ -270,6 +293,7 @@ nav {
     transition: 1.5s !important;
     margin-top: 1rem; }
 
+/* main - index - texto */
 .texto-index {
   width: 100%;
   text-align: center;
@@ -282,12 +306,14 @@ nav {
     font-weight: 400;
     font-size: 1.5rem; }
 
+/* main - index - Carrusel */
 .carru {
   padding: 1rem;
   background-color: black; }
   .carru div {
     object-fit: unset; }
 
+/* main - Nosotros - Tarjetas */
 .noso {
   height: 100%;
   display: flex;
@@ -314,6 +340,7 @@ nav {
   100% {
     transform: translateX(-15px); } }
 
+/* main - Nosotros - Texto con imágen */
 .gaby-0 {
   padding: 15px; }
   .gaby-0 div div {
@@ -323,6 +350,7 @@ nav {
     .gaby-0 div div img {
       border-radius: 1rem; }
 
+/* main - Nosotros - Fotos */
 .noso-under {
   width: 100%;
   display: flex;
@@ -349,6 +377,7 @@ nav {
       padding: 0.5rem;
       border-radius: 0 0 0 1rem; }
 
+/* main - La Carta - Grilla */
 .la-carta {
   width: 100%;
   height: 100%;
@@ -356,7 +385,8 @@ nav {
   display: grid;
   grid-template-areas: "img-1 pizzetas img-5" "img-2 lista-a img-6" "img-3 lista-b img-7" "img-4 lista-c img-8";
   gap: 1rem;
-  justify-items: center; }
+  justify-items: center;
+  /* main - La Carta - Lista -a */ }
   .la-carta div {
     width: 300px;
     height: 300px; }
@@ -426,7 +456,7 @@ nav {
       width: 100%;
       border-radius: 1rem; }
     .gale-a div:hover {
-      transform: scale(1.3); }
+      transform: scale(1.2); }
 
 .tarjeta-galeria {
   width: 100%;
@@ -455,6 +485,7 @@ nav {
       text-align: center;
       padding: 1rem; }
 
+/* main - Contacto */
 .formu-contacto {
   width: 100%;
   display: flex;
@@ -462,6 +493,7 @@ nav {
   flex-wrap: wrap;
   margin: 4rem 0; }
 
+/* main - Contacto - formulario */
 .formulario {
   width: 319px;
   height: 100%;
@@ -476,6 +508,7 @@ nav {
     background-color: #00815d;
     border: solid black 1px; }
 
+/* main - Contacto - right */
 .contacto-r {
   display: flex;
   flex-direction: column;
@@ -509,6 +542,7 @@ nav {
       .contacto-r .what-s div h3 {
         margin-left: 1rem; }
 
+/* main - media query - 1325px */
 @media screen and (max-width: 1325px) {
   .img-5 {
     display: none; }
@@ -519,6 +553,7 @@ nav {
   .img-8 {
     display: none; } }
 
+/* main - media query - 763px */
 @media screen and (max-width: 763px) {
   .banner-02 {
     height: 20vh; }
@@ -533,6 +568,70 @@ nav {
   .gale-a div {
     width: 100%; } }
 
+/* Poderes Sass - Main */
+/* Mapas */
+.mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin: 1rem; }
+  .mapa p {
+    width: 350px;
+    padding: 1rem;
+    margin: 1rem; }
+
+.parrafo-a {
+  background-color: #00815d; }
+
+.parrafo-b {
+  background-color: #7fb1b4; }
+
+.parrafo-c {
+  background-color: #e4e2e2; }
+
+/* Mixin */
+.mixi {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .mixi img {
+    width: 316px;
+    height: 250px;
+    object-fit: cover;
+    padding: 1rem; }
+
+/* Extend */
+.extendido, .extendido-a, .extendido-b, .extendido-c {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin: 1rem; }
+  .extendido p, .extendido-a p, .extendido-b p, .extendido-c p {
+    width: 350px;
+    padding: 1rem;
+    margin: 1rem; }
+
+.extendido-a {
+  background-color: #00815d;
+  color: white;
+  font-weight: 900; }
+
+.extendido-b {
+  background-color: #7fb1b4;
+  font-size: 18px; }
+
+.extendido-c {
+  background-color: #e4e2e2;
+  font-weight: 500; }
+
+/* Footer */
 footer {
   width: 100%;
   height: 100%;
@@ -541,7 +640,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  /* Footer - Redes Sociales */
+  /* Footer - Ubicacion */
+  /* Footer - Contacto */ }
   footer .redes {
     margin-top: 2rem;
     display: flex;
@@ -585,6 +687,7 @@ footer {
       footer .contacto div h3 {
         font-size: 1.5rem; }
 
+/* Footer Media x 763px */
 @media screen and (max-width: 763px) {
   footer .redes h3 {
     font-size: 1.2rem; }
@@ -593,6 +696,7 @@ footer {
   footer .contacto div h3 {
     font-size: 1.2rem; } }
 
+/* Footer Media x 360px */
 @media screen and (max-width: 360px) {
   footer .contacto div h3 {
     font-size: 1rem; } }

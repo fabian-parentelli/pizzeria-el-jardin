@@ -1,0 +1,79 @@
+/* Poderes Sass - Main */
+/* Mapas */
+.mapa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    p {
+        width: 350px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
+$redes: (
+    a: $color-1,
+    b: $color-3,
+    c: $color-4,
+);
+
+@each $red, $color in $redes {
+    
+    .parrafo-#{$red} {
+        background-color: $color;
+    }
+}
+
+/* Mixin */
+@mixin imgsass {
+    width: 316px;
+    height: 250px;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.mixi {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    img {
+        @include imgsass;
+    }
+}
+
+/* Extend */
+.extendido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    p {
+        width: 350px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+.extendido-a {
+    @extend .extendido;
+    background-color: $color-1;
+    color: white;
+    font-weight: 900; 
+}
+.extendido-b {
+    @extend .extendido;
+    background-color: $color-3;
+    font-size: 18px;
+}
+.extendido-c {
+    @extend .extendido;
+    background-color: $color-4;
+    font-weight: 500;
+}

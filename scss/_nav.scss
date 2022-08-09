@@ -1,3 +1,4 @@
+/* Navegador */
 nav {
     background-color: $color-1;
     width: 100%;
@@ -54,6 +55,7 @@ nav {
     }
 }
 
+/* Navegador - media query - 763px*/
 @media screen and (max-width:763px) {
     nav {
         div {
@@ -65,6 +67,7 @@ nav {
                 }
             }
             ul {
+                z-index: 9999;
                 position: fixed;
                 top: 80px;
                 bottom: 0;
