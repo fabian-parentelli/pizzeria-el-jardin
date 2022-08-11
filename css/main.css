@@ -18,7 +18,9 @@ nav {
   height: 90px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  z-index: 1000; }
   nav div a img {
     width: 180px;
     transition: 0.3s; }
@@ -218,6 +220,35 @@ nav {
     color: white;
     font-size: 2rem; }
 
+/* Header - Receta - Banner */
+.banner-receta {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../photo/back-recetas.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner-receta h1 {
+    width: 100%;
+    color: #e4e2e2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    display: flex;
+    flex-direction: column; }
+    .banner-receta h1 span {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #00815d;
+      font-style: italic; }
+  .banner-receta p {
+    color: white;
+    font-size: 2rem; }
+
 /* Header - media query - 763px */
 @media screen and (max-width: 763px) {
   /* Header - Index */
@@ -238,6 +269,10 @@ nav {
     flex-direction: column; }
   /* Header - Contacto */
   .banner-contacto {
+    display: flex;
+    flex-direction: column; }
+  /* Header - Receta */
+  .banner-receta {
     display: flex;
     flex-direction: column; } }
 
@@ -267,6 +302,11 @@ nav {
   .banner-contacto h1 {
     font-size: 4rem; }
   .banner-contacto p {
+    font-size: 1.5rem; }
+  /* header - receta */
+  .banner-receta h1 {
+    font-size: 4rem; }
+  .banner-receta p {
     font-size: 1.5rem; } }
 
 /* main - index - background */

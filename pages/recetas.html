@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Bootstrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Link CSS Propio -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>Poderes Sass</title>
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="pizzeria, restaurant, gastronomico, recetas, para compartir, gustos son gustos, recetas del abuela, saborosas">
+    <meta name="description" content="Es una pizzeria en las afueras de rosario, colonia, uruguay, recetas de la abuela para compartir con ustedes">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon-16x16.png">
+    
+    <!-- title -->
+    <title>El Jardín Recetas</title>
 </head>
 
 <body>
@@ -43,15 +55,15 @@
                         <a href="contacto.html">Contactos</a>
                     </li>
                     <li>
-                        <a href="poderessass.html">SASS</a>
+                        <a href="recetas.html">Recetas</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <header>
-            <section class="banner-contacto">
-                <h1>SASS<span>El Jardín</span></h1>
+            <section class="banner-receta">
+                <h1>Recetas<span>El Jardín</span></h1>
                 <p>Las Mejores Historias</p>
             </section>
         </header>
@@ -60,48 +72,47 @@
         <main>
             <!-- Maps -->
             <section class="mapa">
-                <p class="parrafo-a"> "Excelente atención y servicio, el lugar es muy acogedor y su decoración vintage y rústica le da
-                    un toque romántico encantador. Cuentan con gran variedad de juegos de mesa. Las deliciosas
-                    pizzas son totalmente elaboradas por su dueña en horno de barro y a leña, podés elegir por un
-                    montón de gustos. Y también hacen delivery en Rosario".
+                <p class="parrafo-a"> Esta Pizza de lacón con champiñones y rúcula es buena para acostumbrarse a
+                    acompañar las pizzas con una buena cantidad de hojas verdes, que colocamos encima en el momento de
+                    servirla y llevarla a la mesa. El relleno, al utilizar lacón en lugar de jamón de York tiene ese
+                    toque especial que tanto nos gusta.
                 </p>
-                <p class="parrafo-b"> "En este restaurant ubicado en las afueras de la ciudad, se puede disfrutar de un lugar rústico y
-                    tranquilo. Excelentes las pizzas, el mejor sabor de la zona sin dudas. Su dueña maneja una
-                    excelente atención. Muy buena música. Como dato extra, cuentan con variados juegos de mesa que
-                    hacen más entretenida la noche. Un lugar distinto. Volveremos!!! Sigan así!"
+                <p class="parrafo-b">
+                    La segunda opción que os proponemos es una Pizza mexicana de carne elaborada con una base de tomate
+                    y queso cubierta con carne picada, cebolla y rodajas de aguacate. El toque picante adecuado lo
+                    decides tú añadiendo más o menos Tabasco o chiles jalapeños.
                 </p>
-                <p class="parrafo-c"> "Fuera de la ciudad pero ideal para disfrutar tranquilos en un lugar precioso. El trato fue
-                    encantador, la comida exquisita! Probamos varias pizetas y la tortilla
-                    y todo estaba perfecto. Comiendo en un living particular bajo las estrellas, adentro con el
-                    calor de la chimenea, en el fondo junto a la hoguera, disfrutando un vino casero delicioso o
-                    divirtiéndose con un buen juego de caja".
+                <p class="parrafo-c">
+                    Esta Pizza de pera, jamón y gorgonzola es una de mis pizzas favoritas ya que el toque dulce de la
+                    pera encaja muy bien con el salado del jamón, en contraste con el sabor especial del queso
+                    gorgonzola. Me estoy relamiendo al recordarla.
                 </p>
             </section>
 
             <!-- Mixin -->
             <section class="mixi">
-                <img src="../photo/carrusel-01.jpg" alt="carrusel-01">
-                <img src="../photo/carrusel-02.jpg" alt="carrusel-02">
-                <img src="../photo/carrusel-03.jpg" alt="carrusel-03">
+                <img src="../photo/receta-1.jpg" alt="receta-1">
+                <img src="../photo/receta-2.jpg" alt="receta-2">
+                <img src="../photo/receta-3.jpg" alt="receta-3">
             </section>
 
             <!-- Extend -->
             <section class="extendido">
-                <p class="extendido-a"> "Excelente atención y servicio, el lugar es muy acogedor y su decoración vintage y rústica le da
-                    un toque romántico encantador. Cuentan con gran variedad de juegos de mesa. Las deliciosas
-                    pizzas son totalmente elaboradas por su dueña en horno de barro y a leña, podés elegir por un
-                    montón de gustos. Y también hacen delivery en Rosario".
+                <p class="extendido-a">
+                    Las pizzas de pescado como esta Pizza de bonito y anchoas tienen algo especial. Su sabor a mar
+                    intenso se suaviza con la albahaca y la mozzarella consiguiendo una pizza inolvidable. Tenéis que
+                    probarla.
                 </p>
-                <p class="extendido-b"> "En este restaurant ubicado en las afueras de la ciudad, se puede disfrutar de un lugar rústico y
-                    tranquilo. Excelentes las pizzas, el mejor sabor de la zona sin dudas. Su dueña maneja una
-                    excelente atención. Muy buena música. Como dato extra, cuentan con variados juegos de mesa que
-                    hacen más entretenida la noche. Un lugar distinto. Volveremos!!! Sigan así!"
+                <p class="extendido-b">
+                    Esta Pizza de colores la descubrí en una aplicación del teléfono y estoy feliz de ese descubrimiento
+                    porque siendo muy sencilla es una de las pizzas que más éxito tiene en casa cada vez que la preparo.
+                    A mis sobrinas les entusiasma.
                 </p>
-                <p class="extendido-c"> "Fuera de la ciudad pero ideal para disfrutar tranquilos en un lugar precioso. El trato fue
-                    encantador, la comida exquisita! Probamos varias pizetas y la tortilla
-                    y todo estaba perfecto. Comiendo en un living particular bajo las estrellas, adentro con el
-                    calor de la chimenea, en el fondo junto a la hoguera, disfrutando un vino casero delicioso o
-                    divirtiéndose con un buen juego de caja".
+                <p class="extendido-c">
+                    Las minipizzas o pizzetas individuales me gustan mucho y las suelo elaborar con bases hechas con
+                    obleas de empanadilla por lo que resultan rápidas y cómodas de hacer en cualqueir momento. Estas
+                    pizzetas individuales de salmón y rúcula tienen una combinación de ingredientes que me gusta mucho,
+                    y son también de las que más hacemos en casa.
                 </p>
             </section>
         </main>
@@ -157,4 +168,5 @@
     </script>
     </div>
 </body>
+
 </html>
