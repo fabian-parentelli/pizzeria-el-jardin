@@ -1,0 +1,25 @@
+Index // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + pizzería " 
+
+Nosotros // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + nosotros" 
+La Carta // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + la carta" 
+Galería // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + Galería"
+
+Contactos // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + Contactos"
+
+Recetas // 
+    Agruegue Keywords, Description, Favicon
+    Hice una correción en el title agregando "El jardon + Recetas"
+    Creeé este html con recetas para aplicar Mapa, mixin y Extend dentro de SASS.  
+    
+CSS Menu Hamburguesa, mejoré este menú aplicando "z-index1000", dado que me estaba haciendo una falla.
+  
